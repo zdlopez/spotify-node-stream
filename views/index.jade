@@ -4,10 +4,28 @@ html
     meta(charset="utf-8")
     title Spotify Test
     link(rel="stylesheet", href="http://css.cdn.tl/normalize.css")
+    style
+      body {
+        font-family: "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
+        margin-top: 80px;
+      }
+      label {
+        font-size: 32px;
+        font-weight: 300;
+      }
+      #uri {
+        font-size: 14px;
+        text-align: center;
+        margin: 20px 0;
+        padding: 5px;
+        width: 300px;
+      }
   body
     form
-      label
-        = "Spotify URI"
-        input(autofocus, value="spotify:track:77QXYxKqMSVxNT6UAgsNXh")
-        input(type="submit")
+      label(for="uri") Spotify URI
+      br
+      input(id="uri", value="spotify:track:77QXYxKqMSVxNT6UAgsNXh", autofocus)
+      br
+      input(type="submit")
     script(src="script.js")

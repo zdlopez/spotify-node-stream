@@ -23,6 +23,10 @@ Or do it all in one shot:
 
     SPOTIFY_USERNAME=[your username] SPOTIFY_PASSWORD=[your password] node app
 
+Open up your browser:
+
+    open http://localhost:3000/
+
 ## License
 
 This is free and unencumbered software released into the public domain.
